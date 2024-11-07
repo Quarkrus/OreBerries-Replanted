@@ -1,2 +1,1 @@
-* Add `oreberriesreplanted:vats` item tag for the vat blocks
-* Update JEI support
+* Fix nuggets not forming when there is exactly 100mb of fluid in the vat
