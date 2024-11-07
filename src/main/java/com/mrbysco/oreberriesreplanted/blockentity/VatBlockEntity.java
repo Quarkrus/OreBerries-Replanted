@@ -172,7 +172,7 @@ public class VatBlockEntity extends BlockEntity {
 
 	protected boolean canEvaporate(@Nullable RecipeHolder<VatRecipe> recipe) {
 		if (!tank.isEmpty() && recipe != null) {
-			return tank.getFluidAmount() > recipe.value().getEvaporationAmount();
+			return tank.getFluidAmount() >= recipe.value().getEvaporationAmount();
 		}
 		return false;
 	}
